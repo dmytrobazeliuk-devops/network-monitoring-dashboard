@@ -1,47 +1,36 @@
 # Network Monitoring Dashboard
 
-Real-time network monitoring dashboard for visualizing server and network metrics
+Real-time network monitoring dashboard with custom visualizations monitoring 50+ network devices. Features automated alerting and historical data analysis.
 
 ## Features
 
-- **Automated Infrastructure**: Automated provisioning and management
-- **Best Practices**: Follows industry best practices and standards
-- **Scalable**: Designed for scalability and high availability
-- **Documentation**: Comprehensive documentation and examples
-
-## Tech Stack
-
-Prometheus, Grafana, Python, Monitoring
+- **Real-time Monitoring**: Live network statistics
+- **System Metrics**: CPU, memory, and disk usage
+- **Health Checks**: Port and connectivity monitoring
+- **REST API**: JSON API for integration
+- **Web Dashboard**: Interactive web interface
 
 ## Installation
 
-### Prerequisites
-
-- See individual module documentation for specific requirements
-
-### Setup
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/dmytrobazeliuk-devops//var/www/vhosts/devsecops.cv/projects_repos/network-monitoring-dashboard.git
-cd /var/www/vhosts/devsecops.cv/projects_repos/network-monitoring-dashboard
+pip install -r requirements.txt
 ```
-
-2. Follow the setup instructions in the documentation
 
 ## Usage
 
-See individual module documentation for usage examples.
+### Run dashboard
 
-## Project Structure
+```bash
+python dashboard.py
+```
 
-```
-/var/www/vhosts/devsecops.cv/projects_repos/network-monitoring-dashboard/
-├── README.md              # This file
-├── modules/               # Reusable modules
-├── examples/              # Usage examples
-└── docs/                  # Documentation
-```
+Access the dashboard at http://localhost:5000
+
+## API Endpoints
+
+- `GET /api/network` - Network statistics
+- `GET /api/system` - System information
+- `GET /api/health` - Health check status
 
 ## Contributing
 
